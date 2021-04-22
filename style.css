@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#2c3e50;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color:grey;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  padding: 5px;
+  height: 390px;
+  width: 250px;
+}
+
+.display {
+  color           :black;
+  background-color:#ffffff ;
+  font-size       : 30px;
+  font-family: "Digital";
+  border-radius   : 10px;
+  padding         : 15px 10px;
+  text-align      : right;
+  height          : 70px;
+  width           : 100%;
+}
+
+.nums-cont {
+  width: 75%;
+}
+
+.ops-cont {
+  width: 25%;
+}
+
+button {
+  border       : none;
+  border-radius: 9px;
+  font-size    : 20px;
+  margin       : 5px;
+  height       : 50px;
+  width        : 50px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.wider {
+  border-radius : 12px;
+  width         : 110px;
+}
+
+button.blue {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+button.dark-grey {
+  background-color: #323232;
+  color: #fff;
+}
+
+button.light-grey {
+  background-color: #A5A5A5
+}
+
+button.ac {
+  background-color:#ff6348;
+  color:white;
+}
+
+.title {
+  margin:50px;
+  display: flex;
+  justify-items: center;
+  text-justify: center;
+  align-items: center;
+  justify-content: center;
+  background-color:grey;
+  box-shadow      : 2px 2px 5px rgba(0, 0, 0, 0.7);
+  border-radius   : 8px;
+  padding         : 5px;
+  font-family     : 'Roboto', sans-serif;
+  font-size:15px;
+}
